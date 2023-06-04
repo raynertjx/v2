@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      colors: {
+        'accent-orange': '#f66e0e',
+        'lightgrey': '#616161'
+      },
       keyframes: {
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },

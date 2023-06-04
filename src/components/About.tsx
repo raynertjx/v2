@@ -1,14 +1,15 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import type { FC } from 'react';
 
 interface AboutProps {}
 
-const About: FC<AboutProps> = ({}) => {
+const About: FC<AboutProps> = () => {
   return (
     <section className='min-h-[100vh]' id='about'>
-      <span className='inline-block text-5xl pb-6'>🧑🏻‍💻</span>
+      {/* <span className='inline-block text-5xl pb-6'>🧑🏻‍💻</span> */}
       <h1 className='mb-12'>
-        <span className='text-5xl font-medium mb-12 text-transparent bg-clip-text bg-gradient-to-l from-orange-600 to-amber-500'>
-          About Me
+        <span className='text-5xl font-medium mb-12 text-accent-orange'>
+          about me.
         </span>
       </h1>
       <div className='text-2xl w-4/6 flex flex-col gap-12'>
